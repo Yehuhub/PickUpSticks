@@ -6,11 +6,9 @@
 #include "NewGameButton.h"
 
 Menu::Menu(): m_active(true){
-
-    //looks good just make it look clever
-    m_buttons.push_back(std::make_unique<ExitButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - 100), 500)));
-    m_buttons.push_back(std::make_unique<NewGameButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - 100), 100)));
-    m_buttons.push_back(std::make_unique<LoadButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - 100), 300)));
+    m_buttons.push_back(std::make_unique<NewGameButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - buttonSize.x/2), static_cast<float>(WINDOWHEIGHT/8 * 1))));
+    m_buttons.push_back(std::make_unique<LoadButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - buttonSize.x/2), static_cast<float>(WINDOWHEIGHT/8 * 3))));
+    m_buttons.push_back(std::make_unique<ExitButton>(sf::Vector2f(static_cast<float>(WINDOWWIDTH/2 - buttonSize.x/2), static_cast<float>(WINDOWHEIGHT/8 * 5))));
 }
 
 bool Menu::getActive()const{

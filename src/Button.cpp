@@ -1,7 +1,6 @@
 #include "Button.h"
 
 #include <string>
-#include <iostream> //for debugging
 
 #include "Utilities.h"
 

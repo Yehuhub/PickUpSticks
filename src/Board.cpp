@@ -9,7 +9,6 @@
 
 #include <sstream>
 #include <fstream>
-#include <iostream>//for debugging
 
 Board::Board(): m_duks(), m_info(), m_hint(){
     m_buttons.push_back(std::make_unique<ExitButton>(sf::Vector2f(3, WINDOWHEIGHT/10 * 7)));
@@ -21,15 +20,15 @@ Board::Board(): m_duks(), m_info(), m_hint(){
 void Board::newGame(){
     sf::Vector2f pos;
     int dukAmnt = rand() % WINDOWWIDTH/15;
-    for(int i = 0 ; i < 3 ; i++){ // change to dukamnt
-        //make sure duks are positioned nicely
+    for(int i = 0 ; i < dukAmnt ; i++){ 
+        //position duks
         pos.x = rand() % (WINDOWWIDTH - static_cast<int>(dukSize.y) * 2) + dukSize.y;
         pos.y = rand() % (WINDOWHEIGHT - static_cast<int>(dukSize.y) * 3) + dukSize.y;
 
         insertNewDuk(std::make_unique<Duk>(pos)); 
     }
     m_info.resetInfo();
-    m_info.setGameTime(sf::Time(sf::seconds(3 * 2)));//2 seconds for each duk //change back to dukAmnt
+    m_info.setGameTime(sf::Time(sf::seconds(dukAmnt * 2)));//2 seconds for each duk 
     updateAvailable();
 }
 

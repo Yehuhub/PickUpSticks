@@ -1,5 +1,4 @@
 #include "Hint.h"
-#include <iostream>//for debugging
 
 Hint::Hint(): m_availableToPickup(), m_hintTimer(), m_current(), m_hinting(false){}
 

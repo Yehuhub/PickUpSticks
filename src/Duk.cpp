@@ -2,7 +2,6 @@
 #include "Utilities.h"
 #include <cmath>
 #include <algorithm>
-#include <iostream> //for debugging
 
 
 std::unordered_map<int, sf::Color> Duk::colorsAndValues = {
