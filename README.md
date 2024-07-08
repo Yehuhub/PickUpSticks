@@ -1,5 +1,5 @@
 # PickUpSticks Game
-A quick and fun pick-up sticks game made with C++ and SFML as a graphics library.
+A quick and fun pick-up sticks game made with C++ and SFML as a graphics library.  
 ## Game Objectives and Rules
 Pick-up all the sticks before the time runs out.  
 Press the hint button if you can't find the next stick to pick-up.  
