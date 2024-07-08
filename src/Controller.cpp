@@ -13,7 +13,7 @@
 Controller::Controller()
     : m_board(), m_window(), m_menu(), m_game(false), m_endScreen(false){
 
-    m_window.create(sf::VideoMode(WINDOWWIDTH, WINDOWHEIGHT), "DUUUUKS");
+    m_window.create(sf::VideoMode(WINDOWWIDTH, WINDOWHEIGHT), "PickUpSticks");
     srand(time(NULL));
 
 }

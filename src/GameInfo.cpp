@@ -45,8 +45,8 @@ void GameInfo::drawInfo(sf::RenderWindow& window, int available, int all)const{
     std::string timeString = "Time left: ";
     std::string scoreString = "Score: " + std::to_string(m_score);
     std::string availableString = "Availabale: " + std::to_string(available);
-    std::string total = "Total Duks : "+ std::to_string(all);
-    std::string liftedDukes = "Dukes lifted: "+ std::to_string(m_lifted);
+    std::string total = "Total Sticks : "+ std::to_string(all);
+    std::string liftedDukes = "Sticks lifted: "+ std::to_string(m_lifted);
 
 
     text.setFont(m_font);
