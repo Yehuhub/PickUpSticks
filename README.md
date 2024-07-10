@@ -1,11 +1,10 @@
 # PickUpSticks Game
 A quick and fun pick-up sticks game made with C++ and SFML as a graphics library.  
+![alt text](https://github.com/Yehuhub/PickUpSticks/blob/master/gamepicture.png?raw=true)
 ## Game Objectives and Rules
 Pick-up all the sticks before the time runs out.  
 Press the hint button if you can't find the next stick to pick-up.  
 Save the game at any point to continue playing later.  
-
-![alt text](https://github.com/Yehuhub/PickUpSticks/blob/master/gamepicture.png?raw=true)
 
 ## Installation
 ### Prerequisites
