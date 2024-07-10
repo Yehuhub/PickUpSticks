@@ -11,9 +11,9 @@
 #include <fstream>
 
 Board::Board(): m_duks(), m_info(), m_hint(){
-    m_buttons.push_back(std::make_unique<ExitButton>(sf::Vector2f(3, WINDOWHEIGHT/10 * 7)));
-    m_buttons.push_back(std::make_unique<SaveButton>(sf::Vector2f(WINDOWWIDTH - buttonSize.x - 3 ,WINDOWHEIGHT/10 * 7)));
-    m_buttons.push_back(std::make_unique<HintButton>(sf::Vector2f(WINDOWWIDTH - buttonSize.x - 3 ,WINDOWHEIGHT/10 * 7 - buttonSize.y - 3)));
+    m_buttons.push_back(std::make_unique<ExitButton>(sf::Vector2f(3, WINDOWHEIGHT/10 * 8)));
+    m_buttons.push_back(std::make_unique<SaveButton>(sf::Vector2f(WINDOWWIDTH - buttonSize.x - 3 ,WINDOWHEIGHT/10 * 8)));
+    m_buttons.push_back(std::make_unique<HintButton>(sf::Vector2f(WINDOWWIDTH - buttonSize.x - 3 ,WINDOWHEIGHT/10 * 8 - buttonSize.y - 3)));
 };
 
 //randomizes duk and time for the game
@@ -23,7 +23,7 @@ void Board::newGame(){
     for(int i = 0 ; i < dukAmnt ; i++){ 
         //position duks
         pos.x = rand() % (WINDOWWIDTH - static_cast<int>(dukSize.y) * 2) + dukSize.y;
-        pos.y = rand() % (WINDOWHEIGHT - static_cast<int>(dukSize.y) * 3) + dukSize.y;
+        pos.y = rand() % (WINDOWHEIGHT - static_cast<int>(dukSize.y* 2.5)) + dukSize.y;
 
         insertNewDuk(std::make_unique<Duk>(pos)); 
     }

@@ -58,24 +58,24 @@ void GameInfo::drawInfo(sf::RenderWindow& window, int available, int all)const{
     timeString += std::to_string(asSeconds/60) + ":" + std::to_string(asSeconds % 60);
 
     text.setString(timeString);
-    text.setPosition({static_cast<float>(WINDOWWIDTH/8 * 6), static_cast<float>(WINDOWHEIGHT/32 * 1)});
+    text.setPosition({static_cast<float>(WINDOWWIDTH/9 * 6), static_cast<float>(WINDOWHEIGHT/32 * 1)});
     window.draw(text);
 
 
     text.setString(scoreString);
-    text.setPosition({static_cast<float>(WINDOWWIDTH/8 * 6), static_cast<float>(WINDOWHEIGHT/32 * 2)});
+    text.setPosition({static_cast<float>(WINDOWWIDTH/9 * 6), static_cast<float>(WINDOWHEIGHT/32)* 2.5f});
     window.draw(text);
 
     text.setString(availableString);
-    text.setPosition({static_cast<float>(WINDOWWIDTH/8 * 6), static_cast<float>(WINDOWHEIGHT/32 * 3)});
+    text.setPosition({static_cast<float>(WINDOWWIDTH/9 * 6), static_cast<float>(WINDOWHEIGHT/32 * 4)});
     window.draw(text);
 
     text.setString(total);
-    text.setPosition({static_cast<float>(WINDOWWIDTH/8 * 6), static_cast<float>(WINDOWHEIGHT/32 * 4)});
+    text.setPosition({static_cast<float>(WINDOWWIDTH/9 * 6), static_cast<float>(WINDOWHEIGHT/32 ) * 5.5f});
     window.draw(text);
     
     text.setString(liftedDukes);
-    text.setPosition({static_cast<float>(WINDOWWIDTH/8 * 6), static_cast<float>(WINDOWHEIGHT/32 * 5)});
+    text.setPosition({static_cast<float>(WINDOWWIDTH/9 * 6), static_cast<float>(WINDOWHEIGHT/32) * 7.f});
     window.draw(text);
 }
 

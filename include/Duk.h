@@ -2,8 +2,9 @@
 
 #include <SFML/Graphics.hpp>
 #include <vector>
+#include "Utilities.h"
 
-const sf::Vector2f dukSize(7,300);
+const sf::Vector2f dukSize(7,WINDOWWIDTH/4);
 
 class Duk{
 public:
